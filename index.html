@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+	<!-- <meta name="google-site-verification" content="u_--0s_Uw50r4zCgRrzltkmFhNCduYOJwPGlKVTuNJU" /> -->
+
+  <title>Hao Jin's Website</title>
+  <meta name="description" lang="en" content="This is an academic website for Hao Jin">
+  <meta name="keywords" lang="en" content="Hao Jin." />
+  
+  <link rel="stylesheet" href="css/css/bootstrap.min.css ">
+  <link rel="shortcut icon" href="images/icon/J1.jpg">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/academicons.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="css/animate.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <link rel="stylesheet" type="text/css" href="css/front/front.css">
+
+  <script src="js/jquery-2.1.3.min.js"> </script>
+
+  <!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+</script>
+<![endif]-->
+
+  <script type="text/javascript">
+    function ShowHide(divId, linkDivId) {
+        if(document.getElementById(divId).style.display == 'none') {
+            document.getElementById(divId).style.display='block';
+            document.getElementById(linkDivId).style.display='none'; // Hide the "read more" link
+        }
+        else {
+            document.getElementById(divId).style.display = 'none';
+        }
+    }
+  </script>
+
+  <style>
+    /* 为所有列表项设置样式 */
+    li.indented {
+        position: relative;
+        padding-left: 90px; /* 这是对齐效果的关键，可以根据实际内容调整这个值 */
+    }
+
+    li.indented::before {
+        content: attr(data-date);
+        position: absolute;
+        left: 0;
+        top: 0;
+        white-space: nowrap;
+    }
+    
+    @keyframes pulsate {
+    0% {
+    -webkit-transform: scale(0.6, 0.6);
+    transform: scale(0.6, 0.6);
+    opacity: 0.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 0.0;
+    }
+  }
+
+
+  @keyframes typewriter {
+    /* from { width: 0; } */
+    to { left: 100%; }
+  }
+
+  @keyframes typewriter2 {
+            from {
+                visibility: visible;
+                width: 0;
+            }
+            to {
+                visibility: visible;
+                width: 18ch; /* 18个字符的宽度 */
+            }
+        }
+
+  @keyframes flashing {
+    to {
+        opacity: 0;
+    }
+  }
+
+  </style>
+  
+</head>
+
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC38VTD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="site-header-new">
+<!-- <div class="site-header-new">
+  <div class="site-header-image" style="background-image: url('images/background/bg1.jpg'); transform: translate3d(0px, 0px, 0px);"> -->
+    <nav id="navbar" class= "navbar-expand-lg initial">
+
+      <div class="wrapper">
+      <div id="navbar-text1" class="container navbar-container" style="padding: 0px;">
+      
+        <div class="d-flex justify-content-between w-100">  
+          <div class="navbar-brand" style="color: white;">
+            <p style="margin-bottom: 0">
+          <!-- <i class="fa fa-tasks" aria-hidden="true" style="color: white;"></i> -->
+          HAO JIN'S WEBSITE
+            </p></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+      </div>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end" style="margin-left: 0px;">
+            <li><a class="page-link smooth-scroll" href="#about">About</a></li>
+            <li><a class="page-link smooth-scroll" href="#experiences">Experiences</a></li>
+            <li><a class="page-link smooth-scroll" href="#news">News</a></li>
+            <li><a class="page-link smooth-scroll" href="#publications1">Pubs</a></li>
+        </ul>
+      </div>
+      </div>
+      
+      </div>
+    </nav> 
+
+
+    <script src="main.js"></script>
+
+
+<!-- profile-test -->
+  <div class="profile-container">
+    <div class="wrapper">
+    <div id="my-pic" class="profile-col profile-col-1">
+      <a href="">
+      <img id="Hao Jin" src="./images/self-portrait/me3.jpg" alt="Me" class="circle-img"-/>
+      </a>
+      <div class="social-media">
+        <a href="jinhao9288@126.com" class="social-icon email"><i class="fa-regular fa-envelope"></i></a>
+        <a href="profile/Comprehensive CV_HaoJin.pdf" class="social-icon CV"><i><p>CV</p></i></a>
+        <a href="https://x.com/haojin9288" class="social-icon twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://github.com/lucifer9288" class="social-icon github"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+    
+    <div id="my-name" class="h2-title profile-col profile-col-2 word-size1" style="font-family:Merriweather">
+      I am <b class="word-size2">Hao Jin</b>,
+      <div id="type-word">a passion & creative newcomer to biology</div> 
+
+    </div>
+  </div>
+  </div>
+
+</div>
+</header>
+
+
+<!-- 1.about me -->
+<main class="page-content">
+
+  <div id= 'about' class="bio">
+    <div class="container">
+    <div class="box-card">
+      <div class="bio-body aos-init aos-animate" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+
+    <div id="about" class="pub"> 
+      <div class="about-left">
+        <h1 class="md-heading text-left">
+          <i class="fa fa-id-card" aria-hidden="true"></i>
+          About
+        </h1>
+        <p>
+          Hello！I'm Hao Jin, a master student majoring in Reproductive Biology in 
+          <a href="http://www.cas.zju.edu.cn/casenglish/main.psp">Animal Science College</a>, <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>.<br> 
+          <br>
+          I have a deep fascination with intriguing biological events and the molecular mechanisms that drive them. 
+          My master’s studies have provided me with strong skills in experimental techniques, including molecular biology and embryology, as well as bioinformatics analysis. 
+          Additionally, I’m an optimistic and responsible person who enjoys learning and tackling new challenges. 
+          In the next few years, I look forward to continuing my research in developmental biology and epigenetics.
+
+        </p>
+      </div>
+
+      <div class="about-right">
+        <div class="item-dashed">
+          <p><strong>Future</strong><br>Looking for Ph.D.<br></p>
+        </div>
+        <div class="item">
+          <p><strong>Sep. 2022 -- Present</strong><br>Zhejiang University<br>M.D. in Animal Genetic Breeding and Reproduction</p>
+        </div>
+        <div class="item">
+          <p><strong>Sep. 2018 -- Jun. 2022</strong><br>Zhejiang University<br>B.S. in Animal Science</p>
+        </div>
+      </div>   
+
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+
+
+<!-- 3.Experiences bg -->
+<div id="experiences" class="bio">
+<div class="container">
+  <h1 class="md-heading text-center">
+    <i class="fa fa-tasks" aria-hidden="true"></i>
+    Research Experiences
+  </h1>
+    
+    <!-- new-bg -->
+    <div class="box-card">
+      <div class="row-split">
+      
+        <div class="card-body card-column1 bg-color1 aos-init aos-animate" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="h5 experience-header">
+            <p>Undergraduate<br><br>Zhejiang University</p>
+          </div>
+        </div>
+
+        <div class="card-body card-column2 aos-init aos-animate" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500", style="text-align: left">
+          <b>Sep. 2020 -- Jun. 2021,</b> College of Animal Sciences, Zhejiang University<br>
+          <b>Responsibility:</b> Cloning of ribosomal small subunit assembly complex protein gene and preliminary study on its entry mechanism into nucleolus.<br>
+          <b>Supervisor:</b> Prof. Jinrong Peng<br>
+          <div class="half-line"></div>
+          <b>Sep. 2021 -- Jun. 2022,</b> College of Animal Sciences, Zhejiang University<br>
+          <b>Responsibility:</b> Function of SOX2 in bovine early embryo development.<br>
+          <b>Supervisor:</b> Prof. Kun Zhang
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-card">
+      <div class="row-split">
+      
+        <div class="card-body card-column1 bg-color1 aos-init aos-animate" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="h5 experience-header"><p>Master<br><br>Zhejiang University</p></div>
+        </div>
+
+        <div class="card-body card-column2 aos-animate" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500", style="text-align: left">
+          <b>Sep. 2022 -- Present,</b> College of Animal Sciences, Zhejiang University<br>
+          <b>Responsibility:</b><br>
+          <span style="text-decoration: underline;">Project 1:</span> Principles of the earliest lineage specification and X chromosome dosage compensation in bovine early embryos. (published, Co–first author) <br>
+          <span style="text-decoration: underline;">Project 2:</span> Dynamic change and functions of A (one histone modifying writer) during zygotic genome activation in mice and bovine (in progress, Co–first author)<br>
+          <span style="text-decoration: underline;">Project 3:</span> Function of general transcription factor B in bovine ZGA. (in progress, first author)<br>
+          <span style="text-decoration: underline;">Project 4:</span> Functions of C (one histone modifying reader) during preimplantation embryo development in mice and bovine (in progress, Co–first author)<br>
+          <b>Supervisor:</b> Prof. Kun Zhang
+        </div>
+      </div>
+    </div>
+
+</div>
+</div>
+
+
+
+<!-- 4. News -->
+<div id="news" class="bio">
+  <div class="container">
+  <h1 class="md-heading text-center">
+    <i class="fa fa-tasks" aria-hidden="true"></i>
+    News
+  </h1>
+  <div class="box-card aos-init aos-animate" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <div class="bio-body">
+  <ul>
+    <li class="indented" data-date="[Apr, 2023]"> One abstrat was selected for oral presentation at 2024 SSR. </li>
+    <li class="indented" data-date="[Feb, 2024]"> One paper accepted to FASEB Journal</li>
+  </ul>
+    </div> 
+  </div> 
+  </div>
+</div>
+
+
+<!-- 5. Publication -->
+<div id="publications1" class="bio">
+  <div class="container">
+
+  <div id="pubs" class="publications">
+    <h1 class="md-heading text-center">
+      <i class="fa fa-file" aria-hidden="true"></i>
+      Publications
+    </h1>
+
+    <div class="box-card aos-init aos-animate" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="bio-body">
+      <div class="pub-list">
+
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="publications/scRNA_Seq_in_bovine.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              Single-cell RNA-Seq reveals the earliest lineage specification and X chromosome dosage compensation in bovine preimplantation embryos.
+            </div>
+            <div class="desc">
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                <a class="author">Bingjie Hu*</a>,
+                <a class="author"><b>Hao Jin*</b></a>,
+                <a class="author">Shi Y</a>,
+                <a class="author">Yu H</a>,
+                <a class="author">Wu X</a>,
+                <a class="author">Wang S</a>,
+                <a class="author">Zhang K</a>
+                (* equal contribution)
+              </font>
+              </span>
+            </div>
+
+            <!-- <div class="publish">
+              <span class="publisher"> Under Review, 2024
+              </span>
+              <span class="place"></span>
+            </div> -->
+
+            <div class="tags">
+              [<a class="tag" href="publications/The FASEB Journal-2024-Single cell RNA Seq reveals the earliest lineage specification and X chromosome dosage.pdf"> <strong>Paper</strong></a>]
+              [<a class="tag" href="https://faseb.onlinelibrary.wiley.com/doi/10.1096/fj.202302035RR"><strong>www</strong></a>]
+            </div>
+            <!-- <b><span style="color: red;">Best Paper Award at DLDE workshop at Neurips 2023.</span></b> -->
+          </div>
+        </div>
+        
+      </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<!-- 6. conference -->
+<div id="conference1" class="bio">
+<div class="container">
+<div id="conference" class="publications">
+  <h1 class="md-heading text-center">
+    <i class="fa fa-file" aria-hidden="true"></i>
+    Conference
+  </h1>
+  <div class="box-card aos-init aos-animate" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+  <div class="bio-body">
+
+  <div class="pub-list">
+
+    <div class="pub">
+      <!-- <div class="pub-left">
+        <img class="intro-img frame" src="publications/TANGO.png">
+      </div> -->
+      <div class="pub-center">
+        <div class="title">
+          SOX2 is Essential for Inner Cell Mass Lineage Commitment in Bovine blastocysts.
+        </div>
+        <div class="desc">
+        </div>
+        <div class="authors">
+          <font style="font-size: 11pt;">
+            <a class="author"><b>Hao Jin</b></a>,
+            <a class="author">Lei Luo</a>,
+            <a class="author">Yan Shi</a>,
+            <a class="author">Bingjie Hu</a>,
+            <a class="author">Zhang Kun</a>
+            <!-- (* equal contribution) -->
+          </font>
+          </span>
+        </div>
+
+        <div class="publish">
+          <span class="publisher"> SSR 2023 (Poster)
+            <span class="publisher" style="color: #002336; font-weight: 500">, Ottawa, CAN</span>
+          </span>
+          <span class="place"></span>
+        </div>
+
+        <!-- <div class="tags">
+          [<a class="tag" href="https://faseb.onlinelibrary.wiley.com/doi/pdfdirect/10.1096/fj.202302035RR?download=true"> <strong>Paper</strong></a>]
+          [<a class="tag" href="https://faseb.onlinelibrary.wiley.com/doi/10.1096/fj.202302035RR"><strong>www</strong></a>]
+        </div> -->
+        <!-- <b><span style="color: red;">Best Paper Award at DLDE workshop at Neurips 2023.</span></b> -->
+      </div>
+    </div>
+
+
+    <div class="pub">
+      <!-- <div class="pub-left">
+        <img class="intro-img frame" src="publications/TANGO.png">
+      </div> -->
+      <div class="pub-center">
+        <div class="title">
+          Deciphering Lineage Specification and X Chromosome Dosage Compensation in Bovine Preimplantation Embryos.
+
+        </div>
+        <div class="desc">
+        </div>
+        <div class="authors">
+          <font style="font-size: 11pt;">
+            <a class="author"><b>Hao Jin</b></a>,
+            <a class="author">Bingjie Hu</a>,
+            <a class="author">Shi Y</a>,
+            <a class="author">Yu H</a>,
+            <a class="author">Wu X</a>,
+            <a class="author">Wang S</a>,
+            <a class="author">Zhang K</a>
+            <!-- (* equal contribution) -->
+          </font>
+          </span>
+        </div>
+
+        <div class="publish">
+          <span class="publisher" style="color: red;"> SSR 2024 (Oral Presentation)
+            <span class="publisher" style="color: red; font-weight: 500">, Dublin, IRL</span>
+          </span>
+          <span class="place"></span>
+        </div>
+
+        <!-- <div class="tags">
+          [<a class="tag" href="https://faseb.onlinelibrary.wiley.com/doi/pdfdirect/10.1096/fj.202302035RR?download=true"> <strong>Paper</strong></a>]
+          [<a class="tag" href="https://faseb.onlinelibrary.wiley.com/doi/10.1096/fj.202302035RR"><strong>www</strong></a>]
+        </div> -->
+        <!-- <b><span style="color: red;">Best Paper Award at DLDE workshop at Neurips 2023.</span></b> -->
+      </div>
+    </div>
+    </div>
+
+  </div>
+  </div>
+  
+</div>
+</div>
+</div>
+
+<!-- Miscellaneous-new -->
+<!-- <div class="wrapper"> -->
+  <div id="misc" class="bio">
+    <div class="container">
+    <h1 class="md-heading text-center">
+        <i class="fa fa-heartbeat" aria-hidden="true"></i>
+        Miscellaneous
+      </h1> 
+    <div class="box-card aos-init aos-animate" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="bio-body" style="overflow:hidden;">
+        
+        <p style="margin-bottom: 0;">
+        🗻 I love hiking and traveling, and I hope to one day stand atop Mount Everest, even if it's just in my dreams.<br>
+        🍲 I'm a foodie, if my budget allows, I wish to try all the amazing cuisines from around the world.<br>
+        🐶 I adore animals and hope to have a Golden Retriever with my girlfriend in the future<br>
+        </p>
+        
+        <table style="width:80%;max-width:400px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody><tr>
+            <td style="width:100%; vertical-align:middle; text-align:center;"><p>
+              <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=OAyJtSNrfGHniEx0AmCxfcfDSrJWAl8MaPPnBAPO4_c&cmn=ff5353&co=1a7cc1&cmo=2dba2d&ct=1a7cc1'></script>
+            </a></p></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main> 
+
+
+<!-- footnote -->
+<!-- <footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Personal Email:</li>
+          <li><a href="mailto:">HaoJin9288@gmail.com</a></li>
+          <li><a href="mailto:">jinhao9288@126.com</a></li>
+        </ul>
+      </div> -->
+
+      <!-- <div class="footer-col  footer-col-2">
+          <a href="https://scholar.google.com/citations?user=LUByMsoAAAAJ&hl=zh-CN" class="icon-button github">
+          <i class="ai ai-google-scholar-square icon-github"></i>
+            <span></span>
+          </a>
+
+          <a href="https://github.com/wanjiaZhao1203" class="icon-button github">
+            <i class="fa fa-github icon-github"></i>
+            <span></span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/wanjia-zhao-299b13281/" class="icon-button linkedin">
+            <i class="fa fa-linkedin icon-linkedin"></i>
+            <span></span>
+          </a>
+
+          <a href="https://twitter.com/WanjiaZhao1203" class="icon-button twitter">
+            <i class="fa fa-twitter icon-twitter"></i>
+            <span></span>
+          </a>
+          <a href="mailto:wanjiazh@stanford.edu" class="icon-button github">
+            <i class="fa fa-envelope icon-github"></i>
+            <span></span>
+          </a>
+      </div> -->
+
+	<!--<div class="footer-col footer-col-3">
+    <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fwanjiazhao1203.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false"/></a>
+		<p class="text">Last updated: Jun, 2024.<br>The style of this website is borrowed from <a href='http://hexianghu.com/'>Hexiang Hu's</a>.</p>
+	</div>
+  </div>
+  </div>
+
+</footer> -->
+
+<!-- new-footnote -->
+
+<footer id="footer">
+  <!-- <div class="footer-backgroud"></div> -->
+  <div class="footer">
+    <h2 class="footer-title">
+      Say 
+      <span class="Merriweather" style="font-family: Merriweather">hi!</span>
+    </h2>
+    <h3 class="footer-subtitle">Don't be shy.</h3>
+    <p class="footer-description">
+      You may use the
+      <a class="underline">contact form</a>
+      on the top, or 
+      <a class="underline" href="">e-mail me</a>
+      directly if that's how you roll. While you're at it, feel free to 
+      <a class="underline" href="">check out my resumé</a>
+      to know more about me.
+    </p>
+  </div>
+  <div class="footer-copyright">
+    <div class="footer-row"></div>
+      <div class="footer-column footer-colum-left">
+        <p style="font-family: Merriweather;">Follow Your <i class="fa-solid fa-heart" style="color: red;"></i></p>
+      </div>
+      <div class="footer-column">
+        <p>
+          <a href="mailto:haojin@gmail.com" style="color: white; font-weight: bold; font-family: Merriweather;">HaoJin@gmail.com</a>
+        </p>
+      </div>
+      <div class="footer-column footer-column-right">
+        <p style="font-family: Merriweather;">
+          © HaoJin 2024
+        </p>
+      </div>
+  </div>
+</footer>
+
+
+    <div class="back-to-top">Top</div>
+
+
+<!-- 引入js -->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+  <script src="https://kit.fontawesome.com/10f7fc9655.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<!-- <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim" crossorigin="anonymous"></script> -->
+<script src="js/js/bootstrap.min.js"></script>
+    
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+    
+        }
+    });
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});
+</script>
+
+
+</body>
+
+<!--
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60071442-1', 'auto');
+  ga('send', 'pageview');
+</script>
+-->
+
+<!--<script src="custom-pub.js"></script>-->
+</html>
